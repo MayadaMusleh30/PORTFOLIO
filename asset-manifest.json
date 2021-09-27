@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/PORTFOLIO/static/css/main.eb488f68.chunk.css",
+    "main.css": "/PORTFOLIO/static/css/main.bda558da.chunk.css",
     "main.js": "/PORTFOLIO/static/js/main.61a07c91.chunk.js",
     "main.js.map": "/PORTFOLIO/static/js/main.61a07c91.chunk.js.map",
     "runtime-main.js": "/PORTFOLIO/static/js/runtime-main.66fb7394.js",
@@ -8,7 +8,7 @@
     "static/js/2.13b3ba0c.chunk.js": "/PORTFOLIO/static/js/2.13b3ba0c.chunk.js",
     "static/js/2.13b3ba0c.chunk.js.map": "/PORTFOLIO/static/js/2.13b3ba0c.chunk.js.map",
     "index.html": "/PORTFOLIO/index.html",
-    "static/css/main.eb488f68.chunk.css.map": "/PORTFOLIO/static/css/main.eb488f68.chunk.css.map",
+    "static/css/main.bda558da.chunk.css.map": "/PORTFOLIO/static/css/main.bda558da.chunk.css.map",
     "static/js/2.13b3ba0c.chunk.js.LICENSE.txt": "/PORTFOLIO/static/js/2.13b3ba0c.chunk.js.LICENSE.txt",
     "static/media/intro.scss": "/PORTFOLIO/static/media/5516287.20dba9fe.jpg",
     "static/media/menu.scss": "/PORTFOLIO/static/media/Metrica-Light.4a6b4bd3.ttf"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.66fb7394.js",
     "static/js/2.13b3ba0c.chunk.js",
-    "static/css/main.eb488f68.chunk.css",
+    "static/css/main.bda558da.chunk.css",
     "static/js/main.61a07c91.chunk.js"
   ]
 }
