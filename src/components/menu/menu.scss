@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: $dark;
+    position: fixed;
+    top: 0;
+    right: -2000px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    &.active {
+        right: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-weight: 300;
+        font-size: 50px;
+        color: white;
+        width: 60%;
+
+        li {
+            margin-bottom: 30px;
+
+            @include mobile {
+                margin-bottom: 20px;
+            }
+
+            a {
+                font-family: 'Montserrat', sans-serif;
+                background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                background-size: 200% 200%;
+                animation: rainbow 2s ease-in-out infinite;
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: color .2s ease-in-out;
+                text-decoration: none;
+                transition: all .5s ease;
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: white;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: rgba(0, 0, 0, 0);
+                }
+
+                @include mobile {
+                    font-size: 1rem;
+                }
+
+                .twitter {
+                    cursor: pointer;
+                    color: white;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        color: #1DA1F2;
+                    }
+                }
+
+                .github {
+                    cursor: pointer;
+                    color: white;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        color: #6e5494;
+                    }
+                }
+
+                .linkedin {
+                    cursor: pointer;
+                    color: white;
+                    transition: all .5s ease;
+
+                    &:hover {
+                        color: #0077b5;
+                    }
+                }
+            }
+        }
+    }
+}

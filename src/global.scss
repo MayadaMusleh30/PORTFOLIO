@@ -1,0 +1,37 @@
+$mainColor: #ce0067;
+$secondColor: #0014c5;
+$dark: #303030;
+$light: #cacaca;
+$text: #7c7c7c;
+
+@font-face {
+    font-family: 'Metrica-Light';
+    src: local('Metrica-Light'), url(./fonts/Metrica-Light.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $dark;
+    }
+}
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

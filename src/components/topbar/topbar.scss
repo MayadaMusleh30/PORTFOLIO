@@ -1,0 +1,169 @@
+@import "../../global.scss";
+
+.topbar {
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: $dark;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                font-family: 'Metrica-Light', serif;
+                font-size: 45px;
+                font-weight: bold;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 40px;
+                background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                background-size: 200% 200%;
+                animation: rainbow 2s ease-in-out infinite;
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: color .2s ease-in-out;
+
+                &:hover {
+                    color: rgba(0, 0, 0, 0);
+                }
+
+                @keyframes rainbow {
+                    0% {
+                        background-position: left;
+                    }
+
+                    50% {
+                        background-position: right;
+                    }
+
+                    100% {
+                        background-position: left;
+                    }
+                }
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+
+                @include mobile {
+                    display: none;
+                }
+
+                .twitter {
+                    font-size: 18px;
+                    cursor: pointer;
+                    color: $dark;
+                    transition: all .5s ease;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        color: #1DA1F2;
+                    }
+                }
+
+                .github {
+                    font-size: 18px;
+                    cursor: pointer;
+                    color: $dark;
+                    transition: all .5s ease;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        color: #6e5494;
+                    }
+                }
+
+                .linkedin {
+                    font-size: 18px;
+                    cursor: pointer;
+                    color: $dark;
+                    transition: all .5s ease;
+
+                    @include mobile {
+                        font-size: 15px;
+                    }
+
+                    &:hover {
+                        color: #0077b5;
+                    }
+                }
+
+                span {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .right {
+            .hamburger {
+                width: 32px;
+                height: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                @include mobile {
+                    width: 25px;
+                    height: 20px;
+                }
+
+                span {
+                    width: 100%;
+                    height: 2px;
+                    background-color: $dark;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active {
+        background-color: $dark;
+        color: white;
+
+        .icon {
+            display: none;
+        }
+
+        .hamburger {
+            span {
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

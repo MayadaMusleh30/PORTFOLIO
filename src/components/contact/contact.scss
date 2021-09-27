@@ -1,0 +1,114 @@
+@import "../../global.scss";
+
+.react-reveal {
+    text-align: center;
+    font-size: 1.1rem;
+    color: $text;
+
+    @include mobile {
+        font-size: 15px;
+    }
+}
+
+.contact {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-top: 4rem;
+        width: 100%;
+        color: $dark;
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                align-items: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 30px;
+                color: $dark;
+                text-align: center;
+                font-weight: 500;
+                overflow: hidden;
+                padding: 0 0 2rem 0;
+
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                margin-top: 10vh;
+                margin-bottom: 1rem;
+                font-weight: 500;
+                color: $dark;
+                font-size: 1.6rem;
+
+                @include mobile {
+                    font-size: 18px;
+                }
+            }
+
+            .mailIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5rem;
+                color: white;
+            }
+
+            .subtitle {
+
+                @include mobile {
+                    width: 85%;
+                    font-size: 1rem;
+                }
+            }
+
+            .mail {
+                overflow: hidden;
+                margin-top: 2rem;
+
+                button {
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    color: white;
+                    text-decoration: none;
+                    background-color: $mainColor;
+                    padding: 15px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    border: none;
+                    transition: .5s;
+
+                    &:hover {
+                        background-color: $dark;
+                    }
+
+                    @include mobile {
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            footer {
+                font-size: 15px;
+                margin-top: 25vh;
+                color: $light;
+            }
+        }
+    }
+}

@@ -1,0 +1,338 @@
+@import "../../global.scss";
+
+.about {
+    background-color: white;
+    color: $dark;
+
+    .react-reveal {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $dark;
+        padding: 2rem;
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+
+            @include mobile {
+                font-size: 20px;
+            }
+        }
+
+        span {
+            font-size: 20px;
+            margin: .5rem;
+
+
+            @include mobile {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .content {
+        color: $dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5rem;
+        overflow: hidden;
+
+        @include mobile {
+            flex-direction: column;
+            margin: 1rem 2rem;
+        }
+
+        .left {
+            flex: 1;
+
+            @include mobile {
+                flex: 4;
+                padding: 0;
+                width: 90%;
+                overflow: hidden;
+            }
+
+            .container {
+                margin-bottom: 1rem;
+
+                .header {
+                    .developer {
+                        .codeIcon {
+                            margin-top: 1.5rem;
+                            font-size: 1.5rem;
+                            color: $secondColor;
+
+                            @include mobile {
+                                font-size: 1.2rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.1rem;
+                            font-family: 'Roboto', serif;
+
+                            @include mobile {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .list {
+                            .data {
+                                padding: .5rem 0;
+                                font-size: .8rem;
+
+                                .title {
+                                    display: flex;
+                                    text-align: left;
+                                    justify-content: space-between;
+                                    margin-bottom: .5rem;
+
+                                    @include mobile {
+                                        padding-top: .2rem;
+                                        padding-bottom: 0;
+                                    }
+
+                                    h3 {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        font-family: 'Roboto', serif;
+
+                                        @include mobile {
+                                            font-size: .8rem;
+                                        }
+                                    }
+
+                                    .number {
+                                        font-size: 1rem;
+                                        font-weight: 500;
+                                        font-family: 'Roboto', serif;
+
+                                        @include mobile {
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .bar,
+                        .percentage {
+                            height: 8px;
+                            border-radius: .25rem;
+
+                            @include mobile {
+                                height: 7px;
+                            }
+                        }
+
+                        .bar {
+                            background-color: $light;
+                        }
+
+                        .percentage {
+                            font-family: 'Roboto', serif;
+                            display: block;
+                        }
+
+                        .skill_html {
+                            width: 90%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+
+                        .skill_css {
+                            width: 85%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+
+                        .skill_js {
+                            width: 60%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+                    }
+
+                    .designer {
+                        .paletteIcon {
+                            font-size: 1.5rem;
+                            margin-top: 1rem;
+                            color: $secondColor;
+
+                            @include mobile {
+                                font-size: 1.2rem;
+                                margin-top: 2rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.1rem;
+                            font-family: 'Roboto', serif;
+
+                            @include mobile {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .list {
+                            .data {
+                                padding: .5rem 0;
+                                font-size: .8rem;
+
+                                .title {
+                                    display: flex;
+                                    text-align: left;
+                                    justify-content: space-between;
+                                    margin-bottom: .5rem;
+
+                                    @include mobile {
+                                        padding-top: .2rem;
+                                        padding-bottom: 0;
+                                    }
+
+                                    h3 {
+                                        display: flex;
+                                        justify-content: flex-start;
+                                        font-family: 'Roboto', serif;
+
+                                        @include mobile {
+                                            font-size: .8rem;
+                                        }
+                                    }
+
+                                    .number {
+                                        font-size: 1rem;
+                                        font-weight: 500;
+                                        font-family: 'Roboto', serif;
+
+                                        @include mobile {
+                                            font-size: .9rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .bar,
+                        .percentage {
+                            height: 8px;
+                            border-radius: .25rem;
+
+                            @include mobile {
+                                height: 7px;
+                            }
+                        }
+
+                        .bar {
+                            background-color: $light;
+                        }
+
+                        .percentage {
+                            display: block;
+                        }
+
+                        .skill_ui {
+                            width: 90%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+
+                        .skill_graphic {
+                            width: 90%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+
+                        .skill_design {
+                            width: 85%;
+                            background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                        }
+                    }
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+            text-align: left;
+            width: 40%;
+
+            @include mobile {
+                width: 100%;
+            }
+
+            .container {
+                .header {
+                    h1 {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        margin-top: 2rem;
+                        text-align: left;
+                        font-size: 1.6rem;
+
+                        @include mobile {
+                            margin-top: 0;
+                            font-size: 18px;
+                            text-align: center;
+                        }
+                    }
+
+                    p {
+                        font-family: 'Roboto', serif;
+
+                        margin: 2rem 3rem 2rem 0;
+                        color: $text;
+                        font-size: 1.1rem;
+
+                        @include mobile {
+                            text-align: center;
+                            margin: 2rem 1rem 2rem 1rem;
+                            font-size: 15px;
+                        }
+
+                        a {
+                            text-decoration: none;
+
+                            .portlink {
+                                font-family: 'Roboto', serif;
+                                color: $mainColor;
+                                font-weight: 500;
+
+                                background: linear-gradient(45deg, hsla(331, 100%, 47%, 1) 25%, hsla(20, 100%, 59%, 1) 52%, hsla(258, 100%, 45%, 1) 80%);
+                                background-size: 200% 200%;
+                                animation: rainbow 2s ease-in-out infinite;
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                transition: color .2s ease-in-out;
+
+                                &:hover {
+                                    color: rgba(0, 0, 0, 0);
+                                }
+
+                                @keyframes rainbow {
+                                    0% {
+                                        background-position: left;
+                                    }
+
+                                    50% {
+                                        background-position: right;
+                                    }
+
+                                    100% {
+                                        background-position: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
